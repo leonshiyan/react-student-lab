@@ -1,7 +1,13 @@
-const Student = (props) => {
+import Score from "../Score/Score"
+
+const Student = ({student}) => {
   return ( 
     <>
-      <h1>This is student component</h1>
+    <div>
+      <h3>Name: {student.name}</h3>
+      <p>Bio: {student.bio}</p>
+      <Score scores = {student.scores}/>
+    </div>
     </>
   )
 }
