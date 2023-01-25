@@ -2,9 +2,9 @@ const Score = ({scores}) => {
   return ( 
     <>
       <div>
-        {scores.map((score) => (
-          <p>{score.date} score : {score.score}</p>
-      ))}
+        {scores.map((score, index) => (
+          <p key={index}>{score.date} score : {score.score}</p>
+        ))}
       </div>
     </>
   )

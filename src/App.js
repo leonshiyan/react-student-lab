@@ -5,7 +5,7 @@ import { studentListData } from './data/data'
 function App() {
 
   const [studentList, setStudentList] = useState(studentListData)
-  
+
 
   return (
   <div>
